@@ -7,3 +7,4 @@ window.addEventListener("scroll", () => {
 
   lastScroll = window.scrollY;
 });
+
