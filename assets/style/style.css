@@ -657,7 +657,6 @@ textarea {
     resize: none;
     height: 180px;
 }
-
 @media screen and (max-width: 780px){
   .contact-info{
     justify-content: center;
