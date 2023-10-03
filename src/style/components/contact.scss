@@ -27,7 +27,7 @@ text-align: center;
 .contact-info p{
 letter-spacing: 2px;
 font-size: 1.2rem;
-transform: scale($img-text);
+transform: scale(var(--img-text));
 transition: transform 0.4s ease-in-out;
 margin-left: 8px;
 }
@@ -49,7 +49,7 @@ transition: 0.3s ease;
 .contact-mail:has(:hover, :focus){
 box-shadow: rgba(0, 0, 0, 0.11) 0px 10px 36px 0px, rgba(0, 0, 0, 0.025) 0px 0px 0px 1px;
 $img-scale: 1.10;
-$img-text: 1.05
+--img-text: 1.05
 }
 
 .form-grid {
