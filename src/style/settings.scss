@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(../assets/fonts/SourceSansPro-Light.ttf);
+}
+$primary-color: #7B8695;
+$secondary-color: #87bfd7da;
+$background-color: rgb(250, 250, 250);
+$background-2-color: rgb(237,242,248);
+$card-primary-white: rgb(240, 240, 240);
+$btn-color:rgba(135, 207, 235, 0.726);
+
+$img-scale: 1.001;
+$title-color: black;
+$link-icon-translate: -20px;
+$link-icon-opacity: 0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  margin-block: 0;
+  outline: none;
+  user-select: none;
+}
+
+body {
+  font-family: "source Sans Pro", sans-serif;
+  background: $background-color;
+}
+h1 {
+  font-size: 3.4rem;
+  font-weight: 200;
+  color: $primary-color;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding: 2rem 0 1rem;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  line-height: 36px;
+  font-size: 1.25rem;
+  color: $primary-color;
+}
+
+.button {
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 50px;
+  padding: 13px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font: 700 0.75rem "Source Sans Pro";
+  transition: 0.2s
+}

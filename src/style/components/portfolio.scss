@@ -1,0 +1,185 @@
+#portfolio {
+  background-color: $background-2-color;
+}
+.services-all{
+display: flex;
+justify-content: space-evenly;
+padding: 2rem 0;
+}
+
+/* card  */
+.portfolio-block {
+width: 23rem;
+height: 32rem;
+border-radius: 10px;
+overflow: hidden;
+cursor: pointer;
+position: relative;
+color: #f0f0f0;
+box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+.portfolio-block:hover {
+background-color: rgba(0, 0, 0, 0.941) ;
+}
+
+.portfolio-block img {
+position: absolute;
+object-fit: cover;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 1;
+}
+.portfolio-block:hover img {
+transition: opacity 0.3s ease-in;
+opacity: 0.5;
+}
+
+.portfolio-block h3{
+display: flex;
+justify-content: center;
+position: absolute;
+left: 0;
+bottom: 0;
+transition: inset 0.3s 0.3s ease-out;
+text-transform: uppercase;
+color: $background-color;
+font-weight: 800;
+letter-spacing: 5px;
+font-size: 1.7rem;
+width: 100%;
+background-color: rgba(0, 0, 0, 0.369);
+transition-delay: 0.01s;
+backdrop-filter: blur(4px);
+}
+.portfolio-block:hover h3 {
+inset: auto auto 400px 0;
+transition: inset 0.4s ease-out;
+display: flex;
+justify-content: center;
+background-color: transparent;
+backdrop-filter: blur(0.8px);
+}
+
+.portfolio-block p, .portfolio-block a {
+position: absolute;
+opacity: 0;
+padding: 1rem;
+transition: opacity 0.4s ease-out;
+color: #fff;
+font-weight: 600;
+font-size: 1.2rem;
+backdrop-filter: blur(1px);
+}
+.portfolio-block p {
+inset: auto auto 100px 0;
+line-height: 2rem;
+font-weight: 800;
+max-width: 100%;
+}
+.portfolio-block a {
+inset: auto auto 20px 15px;
+color: inherit;
+text-decoration: none;
+padding: 10px 30px;
+font-size: 0.9rem;
+}
+.portfolio-block:hover p, .portfolio-block:hover a {
+opacity: 1;
+transition: opacity 0.5s 0.3s ease-in;
+}
+
+.portfolio-block a:hover{
+background-color: $background-2-color;
+}
+
+/*/ RESPONSIVE /*/
+@media screen and (max-width: 1200px){
+.portfolio-block{
+  width: 20rem;
+  height: 28rem;
+}
+.portfolio-block h3{
+  font-size: 1.4rem;
+}
+.portfolio-block:hover h3{
+  inset: auto auto 380px 0;
+}
+.portfolio-block p {
+  /* font-size: 1rem; */
+  inset: auto auto 60px 0;
+}
+}
+@media screen and (max-width: 1080px){
+.portfolio-block{
+  width: 16rem;
+  height: 24rem;
+}
+.portfolio-block h3 {
+  font-size: 1.1rem;
+}
+.portfolio-block:hover h3{
+  inset: auto auto 300px 0;
+  font-size: 1.1rem;
+}
+.portfolio-block p {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  inset: auto auto 60px 0;
+}
+}
+@media screen and (max-width: 850px){
+
+.services-all{
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-block{
+  margin: 2rem 0;
+  width: 20rem;
+  height: 28rem;
+}
+.portfolio-block h3 {
+  font-size: 1.4rem;
+}
+.portfolio-block:hover h3{
+  inset: auto auto 340px 0;
+  font-size: 1.4rem;
+}
+.portfolio-block p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  inset: auto auto 30px 0;
+}
+}
+
+@media screen and (max-width: 420px) {
+.portfolio-block{
+  width: 17rem;
+  height: 21rem;
+  margin: 1rem 0;
+}
+#portfolio h2{
+  padding: 3rem 0 0;
+}
+.portfolio-block h3 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.portfolio-block:hover h3{
+  inset: auto auto 290px 0;
+  font-size: 1.3rem;
+}
+.portfolio-block p {
+  inset: auto auto 10px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.portfolio-block a{
+  inset: auto auto 15px 15px;
+  padding: 5px 15px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+}
