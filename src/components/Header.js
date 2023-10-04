@@ -16,7 +16,6 @@ const Header = () => {
 							</h1>
 							<p>Frontend Web Developper</p>
 							<NavLink to="/about" className="button">learn more about me</NavLink>
-							{/* <a href="../components/aboutMe.html" class="button">learn more about me</a> */}
 						</div>
 					</div>
     </header>
