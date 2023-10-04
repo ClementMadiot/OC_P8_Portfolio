@@ -9,7 +9,7 @@ const Portfolio = () => {
 
       {projet.map(({ id, title, cover, description, language, lien })=> (
         <div key={id} className="portfolio-block">
-          <img src={cover} alt={title} />
+          <img src={cover} alt={`Projet ${title}`} />
           <div className="porfolio-description">
             <h3>{title}</h3>
             <p>

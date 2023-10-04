@@ -8,13 +8,13 @@ const Service = () => {
     <section id="services">
 			<h2>Services</h2>
 
-			<section class="services-card">
-			<article class="services-article">
-				<div class="article-wrapper">
+			<section className="services-card">
+			<article className="services-article">
+				<div className="article-wrapper">
 					<figure>
 						<img src={Frontend} alt="front-end" />
 					</figure>
-					<div class="services-description">
+					<div className="services-description">
 						<h3>Front-end</h3>
 						<p>
 							Intégration des éléments visuels d'un site ; création d'une interface lisible et facilement navigable.
@@ -23,24 +23,24 @@ const Service = () => {
 				</div>
 			</article>
 
-			<article class="services-article">
-				<div class="article-wrapper">
+			<article className="services-article">
+				<div className="article-wrapper">
 					<figure>
 						<img src={Backend} alt="back-end" />
 					</figure>
-					<div class="services-description">
+					<div className="services-description">
 						<h3>Back-end</h3>
 							<p>Conception d'API RESTful à l'aide de Node.js, de son framework Express, et de la base de données MongoDB.</p>
 					</div>
 				</div>
 			</article>
 
-			<article class="services-article">
-				<div class="article-wrapper">
+			<article className="services-article">
+				<div className="article-wrapper">
 					<figure>
 						<img src={Optimiser} alt="optimiser" />
 					</figure>
-					<div class="services-description">
+					<div className="services-description">
 						<h3>Débuggez et optimisez</h3>
 							<p>Optimisez la performance, le SEO de votre site web et éliminez les problèmes gênants.</p>
 					</div>

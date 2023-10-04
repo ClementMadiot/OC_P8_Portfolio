@@ -13,7 +13,7 @@ const Contact = () => {
             <p>clementmadiot09@gmail.com</p>
           </a>
         </div>
-        <div id="phone" class="contact-phone">
+        <div id="phone" className="contact-phone">
           <a href="tel:+33648501383">
             <img src={Whatsap} alt="Whatsap" />
             <p className="phone-number">+33 648 501 383</p>
@@ -24,15 +24,15 @@ const Contact = () => {
       <form method="post" action="#">
             <div className="form-grid">
                 <div>
-                    <label for="name">Name</label>
+                    <label htmlFor="name">Name</label>
                     <input type="text" id="name" />
                 </div>
                 <div>
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="text" id="email" />
                 </div>
                 <div className="textarea">
-                    <label for="message">Message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea id="message"></textarea>
                 </div>
             </div>

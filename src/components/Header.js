@@ -5,10 +5,10 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <header id="accueil">
-      <div class="img-accueil">
+      <div className="img-accueil">
         <img src={Worker} alt="man-works" />
       </div>
-      <div class="container">
+      <div className="container">
 					<div>
 						<h1>Hi ! 
 								<br/>
