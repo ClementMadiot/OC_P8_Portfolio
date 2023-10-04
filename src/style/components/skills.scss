@@ -32,13 +32,13 @@
   backdrop-filter: blur(4px);
 }
 .skills-round:has(:hover, :focus){
-  $img-scale: 1.05;
+  --img-scale: 1.05;
   box-shadow: rgba(0, 0, 0, 0.11) 0px 10px 36px 0px, rgba(0, 0, 0, 0.025) 0px 0px 0px 1px;
 }
 
 .skills-round img{
   width: 76px;
   height: 76px;
-  transform: scale($img-scale);
+  transform: scale((--img-scale));
   transition: transform 0.4s ease-in-out;
 }

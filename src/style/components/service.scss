@@ -27,7 +27,7 @@
   margin: 0 0 18px 0;
   font-size: 1.9rem;
   letter-spacing: 0.06em;
-  color: $title-color;
+  color: var(--title-color);
   transition: color 0.3s ease-out;
 }
 
@@ -41,7 +41,7 @@ figure {
 .services-article img {
   width: 100%;
   transform-origin: center;
-  transform: scale($img-scale);
+  transform: scale(var(--img-scale));
   transition: transform 0.4s ease-in-out;
 }
 
@@ -50,10 +50,10 @@ figure {
 }
 
 .services-article:has(:hover, :focus) {
-  $img-scale: 1.1;
-  $title-color: $secondary-color;
-  $link-icon-translate: 0;
-  $link-icon-opacity: 1;
+  --img-scale: 1.1;
+  --title-color: $secondary-color;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 

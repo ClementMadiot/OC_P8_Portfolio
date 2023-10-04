@@ -1,17 +1,11 @@
 import React from 'react'
-import {  NavLink } from 'react-router-dom'
-
-
 
 const NavBar = () => {
   return (
     <nav id="navbar">
       <ul>
         <li>
-          <NavLink to="/" href="#accueil">
-            accueil
-          </NavLink>
-          {/* <a href="#accueil"></a> */}
+          <a href="#accueil">accueil</a>
         </li>
         <li>
           <a href="#services">services</a>

@@ -8,11 +8,12 @@ $background-color: rgb(250, 250, 250);
 $background-2-color: rgb(237,242,248);
 $card-primary-white: rgb(240, 240, 240);
 $btn-color:rgba(135, 207, 235, 0.726);
-
-$img-scale: 1.001;
-$title-color: black;
-$link-icon-translate: -20px;
-$link-icon-opacity: 0;
+:root{
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+}
 
 * {
   margin: 0;
@@ -66,4 +67,9 @@ p {
   cursor: pointer;
   font: 700 0.75rem "Source Sans Pro";
   transition: 0.2s
+}
+.button:hover,
+footer a:hover {
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
 }
