@@ -3,6 +3,20 @@
   padding: 60px 0;
   background-color: $background-2-color;
   display: flex;
+
+}
+.formMessage {
+  p {
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .success {
+    background: rgb(139, 248, 139);
+  }
+  .error {
+    background: rgb(246, 147, 147);
+  }
 }
 .sectionContact{
   display: flex;

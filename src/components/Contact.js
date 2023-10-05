@@ -1,15 +1,19 @@
 import React from 'react'
 import Gmail from '../assets/images/icons8-gmail-96.png'
 import Whatsap from '../assets/images/icons8-whatsapp-96.png'
+import ContactForm from './ContactForm'
 
 const Contact = () => {
   return (
     <section id="contact">
-      <section className='sectionContact'>
-      <h2>Me contacter</h2>
-      <div>
-      <h3>N'hésitez pas à me contacter via ce formulaire, ou directement par mail</h3>
-      </div>
+      <section className="sectionContact">
+        <h2>Me contacter</h2>
+        <div>
+          <h3>
+            N'hésitez pas à me contacter via ce formulaire, ou directement par
+            mail
+          </h3>
+        </div>
       </section>
 
       <section className="sectionForm">
@@ -27,43 +31,7 @@ const Contact = () => {
             </a>
           </div>
         </article>
-
-        <form method="post" action="#">
-          <article className='userName'>
-            <div>
-              <label htmlFor="lastName">Nom</label>
-              <input type="text" id="lastName" placeholder="Nom" />
-            </div>
-            <div>
-              <label htmlFor="firstName">Prénom</label>
-              <input type="text" id="firstName" placeholder="Prénom" />
-            </div>
-          </article>
-          <article>
-            <div>
-              <label htmlFor="email">E-mail</label>
-              <input type="text" id="email" placeholder="E-mail" />
-            </div>
-          </article>
-          <article>
-            <div>
-              <label htmlFor="sujet">Sujet</label>
-              <input type="text" id="sujet" placeholder="Sujet" />
-            </div>
-          </article>
-          <article>
-            <div className="textarea">
-              <label htmlFor="message">Message</label>
-              <textarea id="message" placeholder="Votre message"></textarea>
-            </div>
-          </article>
-          <input
-            href="#"
-            type="button"
-            className="button"
-            value="Send Message"
-          />
-        </form>
+        <ContactForm /> 
       </section>
     </section>
   )
