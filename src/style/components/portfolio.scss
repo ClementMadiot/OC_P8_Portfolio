@@ -2,13 +2,10 @@
   background-color: $background-2-color;
   padding: 2rem 0;
   position: relative;
-  h2 {
-    padding: 4rem 0;
-  }
 }
 .services-all {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 0;

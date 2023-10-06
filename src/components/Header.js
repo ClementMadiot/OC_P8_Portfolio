@@ -1,6 +1,6 @@
 import React from 'react'
 import Worker from '../assets/images/man-works.avif'
-import { NavLink } from 'react-router-dom'
+
 
 const Header = () => {
   return (

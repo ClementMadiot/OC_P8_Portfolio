@@ -4,8 +4,10 @@ import { skillItem } from '../data/skillsItem'
 const Skills = () => {
   return (
     <section id="skills">
-      <h2>Mes compétences à votre services</h2>
-      <span className='back-span'>skills</span>
+      <div className="title-span">
+        <h2>Mes compétences</h2>
+        <span className='back-span'>skills</span>
+      </div>
       <div className="skills-list">
         {skillItem.map(({ id, cover, title }) => (
           <div key={id} className="skills-item">

@@ -2,16 +2,16 @@
   background-color: #f5f5f5;
   position: relative;
 
-  h2 {
-    padding: 4rem 0;
-  }
 }
 .allServices {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  @media screen and (max-width: 665px){
+    justify-content: center;
+  }
 }
 .allServices::before{
   content: '';
@@ -19,9 +19,10 @@
     width: 6%;
     height: 1px;
     background: black;
-    top: 165px;
+    top: 170px;
     left: 50%;
     transform: translateX(-50%);
+    
 }
 .serviceCard {
   display: flex;
@@ -29,13 +30,17 @@
   border-radius: 10px;
   color: #fff;
   font-size: 24px;
-  margin: 2rem 0;
+  margin: 2rem 1rem;
   overflow: hidden;
   text-align: center;
   width: 380px;
   height: 260px;
   box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
   transition: all 0.5s ease;
+  @media screen and (max-width: 842px){
+    width: 290px;
+    height: 280px;
+  }
   .icon {
     font-size: 3em;
     color: $icon-services;

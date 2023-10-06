@@ -12,7 +12,7 @@ const ContactForm = () => {
 
     const result = document.getElementById('result')
     const mail = document.getElementById('email')
-
+    console.log(process.env)
     emailjs.sendForm(
       'service_smreham',
       'template_ryw83wi',
@@ -28,7 +28,7 @@ const ContactForm = () => {
         result.innerHTML = ''
       }, 2000)
 
-      form.current.reset()
+      // form.current.reset()
     } else {
       result.innerHTML =
         "<p className='error'>Une erreur s'est produite, veuillez réessayer</p>"
@@ -38,7 +38,7 @@ const ContactForm = () => {
       setTimeout(() => {
         result.innerHTML = ''
       }, 2000)
-      form.current.reset()
+      // form.current.reset()
     }
     return false
   }
@@ -70,7 +70,7 @@ const ContactForm = () => {
           <div>
             <label>E-mail</label>
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="E-mail"
               required
@@ -93,7 +93,6 @@ const ContactForm = () => {
         <input type="submit" className="button" value="Envoyer" />
       </form>
       <div id="result"></div>
-      {/* <p className='error'>Une erreur s'est produite, veuillez réessayer</p> */}
     </section>
   )
 }
