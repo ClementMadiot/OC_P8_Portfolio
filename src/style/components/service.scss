@@ -1,10 +1,27 @@
 #services {
   background-color: #f5f5f5;
+  position: relative;
+
+  h2 {
+    padding: 4rem 0;
+  }
 }
-.allServices{
+.allServices {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+.allServices::before{
+  content: '';
+    position: absolute;
+    width: 6%;
+    height: 1px;
+    background: black;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .serviceCard {
   display: flex;
@@ -12,54 +29,53 @@
   border-radius: 10px;
   color: #fff;
   font-size: 24px;
-  margin: 10px;
+  margin: 2rem 0;
   overflow: hidden;
   text-align: center;
   width: 380px;
   height: 260px;
-  box-shadow: -6px 10px 40px rgba(0,0,0,0.06);
+  box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
   transition: all 0.5s ease;
+  .icon {
+    font-size: 3em;
+    color: $icon-services;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: $icon-services;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.8rem;
+    margin: 0 10px;
+  }
 }
-#services .icon {
-  font-size: 3em;
-  color: $icon-services;
-}
-.serviceCard:hover{
+.serviceCard:hover {
   background-color: rgba(46, 52, 64, 0.805);
   transition: all 0.3s ease;
   z-index: 1;
-}
-.serviceCard:hover h3,
-.serviceCard:hover i{
-  color: #fff;
-}
 
-.serviceCard aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  z-index: 2;
-}
-
-.serviceCard h3 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin: 1rem 0;
-  text-transform: uppercase;
-  color: $icon-services;
-}
-
-.serviceCard p {
-  font-size: 1.1rem;
-  color: #fff;
-  line-height: 1.8rem;
+  h3,
+  i {
+    color: #fff;
+  }
 }
 
 /*/ RESPONSIVE /*/
 @media screen and (max-width: 900px) {
-
 }
 @media screen and (max-width: 760px) {
-
 }

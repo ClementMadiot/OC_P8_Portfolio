@@ -4,7 +4,10 @@ import { projet } from '../data/projet'
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h2>Portfolio</h2>
+      <div className="title-span">
+        <h2>Mes Projets Réaliser</h2>
+        <span className='back-span'>Portfolio</span>
+      </div>
       <div className="services-all">
 
       {projet.map(({ id, title, cover, description, language, lien })=> (

@@ -1,0 +1,28 @@
+#about {
+  background-color: $background-2-color;
+  padding: 2rem;
+  position: relative;
+  article {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    span {
+      top:  -20px;
+    }
+  }
+  article::before {
+    content: '';
+    position: absolute;
+    width: 6%;
+    height: 1px;
+    background: black;
+    top: 195px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .description {
+    margin: 5rem auto;
+    width: 80%;
+
+  }
+}

@@ -7,11 +7,12 @@ const Contact = () => {
   return (
     <section id="contact">
       <section className="sectionContact">
-        <h2>Me contacter</h2>
+        <h2>Démarrons un projet ensemble</h2>
+        <span className='back-span'>Contact</span>
         <div>
           <h3>
             N'hésitez pas à me contacter via ce formulaire, ou directement par
-            mail
+            mail !
           </h3>
         </div>
       </section>

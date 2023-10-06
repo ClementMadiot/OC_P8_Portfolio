@@ -1,42 +1,46 @@
 import React, { useRef } from 'react'
-import { init } from '@emailjs/browser'
 import emailjs from '@emailjs/browser'
-init(process.env.ID)
 
 const ContactForm = () => {
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
-    const formMess = document.querySelector('.formMessage')
 
-    emailjs
-      .sendForm(
-        'service_smreham',
-        'template_ryw83wi',
-        form.current,
-        process.env.REACT_APP_ID
-      )
-      .then(
-        (res) => {
-          console.log(res.text)
-          form.current.reset()
-          formMess.innerHTML = "<p className='success'>Message envoyé !</p>"
+    const expressionReguliere =
+      /^(([^<>()[]\.,;:s@]+(.[^<>()[]\.,;:s@]+)*)|(.+))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/
 
-          setTimeout(() => {
-            formMess.innerHTML = ''
-          }, 2000)
-        },
-        (err) => {
-          console.log(err.text)
-          formMess.innerHTML =
-            "<p className='error'>Une erreur s'est produite, veuillez réessayer</p>"
+    const result = document.getElementById('result')
+    const mail = document.getElementById('email')
 
-          setTimeout(() => {
-            formMess.innerHTML = ''
-          }, 2000)
-        }
-      )
+    emailjs.sendForm(
+      'service_smreham',
+      'template_ryw83wi',
+      form.current,
+      process.env.REACT_APP_ID
+    )
+    if (expressionReguliere.test(mail.value)) {
+      result.innerHTML = '<p className="success">Message envoyé !</p>'
+      result.style.background = 'rgb(139, 248, 139)'
+      result.style.borderRadius = '15px'
+
+      setTimeout(() => {
+        result.innerHTML = ''
+      }, 2000)
+
+      form.current.reset()
+    } else {
+      result.innerHTML =
+        "<p className='error'>Une erreur s'est produite, veuillez réessayer</p>"
+      result.style.background = 'rgb(246, 147, 147)'
+      result.style.borderRadius = '15px'
+
+      setTimeout(() => {
+        result.innerHTML = ''
+      }, 2000)
+      form.current.reset()
+    }
+    return false
   }
   return (
     <section>
@@ -46,7 +50,7 @@ const ContactForm = () => {
             <label>Nom</label>
             <input
               type="text"
-              name="user_name"
+              name="name"
               required
               placeholder="Nom"
               id="name"
@@ -54,7 +58,12 @@ const ContactForm = () => {
           </div>
           <div>
             <label>Prénom</label>
-            <input type="text" name="user_firstName" placeholder="Prénom" />
+            <input
+              type="text"
+              name="first-name"
+              placeholder="Prénom"
+              required
+            />
           </div>
         </article>
         <article>
@@ -62,19 +71,14 @@ const ContactForm = () => {
             <label>E-mail</label>
             <input
               type="text"
-              name="user_email"
-              required
+              name="email"
               placeholder="E-mail"
+              required
               id="email"
             />
           </div>
         </article>
-        <article>
-          <div>
-            <label>Sujet</label>
-            <input type="text" name="sujet" placeholder="Sujet" id="subjet" />
-          </div>
-        </article>
+        <article></article>
         <article>
           <div className="textarea">
             <label>Message</label>
@@ -88,7 +92,8 @@ const ContactForm = () => {
         </article>
         <input type="submit" className="button" value="Envoyer" />
       </form>
-      <div className="formMessage"></div>
+      <div id="result"></div>
+      {/* <p className='error'>Une erreur s'est produite, veuillez réessayer</p> */}
     </section>
   )
 }

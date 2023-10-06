@@ -5,7 +5,10 @@ import { serviceCard } from '../data/serviceCard'
 const Service = () => {
   return (
     <section id="services">
-      <h2>Services</h2>
+      <div className='title-span'>
+        <h2>Mes Services</h2>
+        <span className='back-span'>Service</span>
+      </div>
       <div className="allServices">
         {serviceCard.map(({ id, logo, title, description }) => (
           <article key={id} className="serviceCard">

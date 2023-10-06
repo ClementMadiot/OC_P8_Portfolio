@@ -6,17 +6,19 @@ import Service from '../components/Service'
 import Portfolio from '../components/Portfolio'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
+import AboutMe from '../components/AboutMe'
 
 const Home = () => {
   return (
     <div>
       <NavBar />
-      <Header/>
-      <Service/>
-      <Portfolio/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
+      <Header />
+      <Service />
+      <Portfolio />
+      <Skills />
+      <AboutMe />
+      <Contact />
+      <Footer />
     </div>
   )
 }
