@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbartest from './navbarsidetest.scss'
+import Navbartest from './navbartest'
 
 const Test = () => {
   return (
