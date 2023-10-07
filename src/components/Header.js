@@ -12,13 +12,10 @@ const Header = () => {
         <div className="container">
           <div>
             <h1>
-              Hi !
-              <br />I am Clément Madiot
+              Bonjour !
+              <br />Je suis Clément Madiot
             </h1>
-            <p>Frontend Web Developper</p>
-            <a href="#about" className="button">
-              En apprendre plus ...</a>
-
+            <p>Développeur Web</p>
           </div>
         </div>
       </div>

@@ -24,11 +24,19 @@ const AboutMe = () => {
             <br />
             <br />
           </p>
-            <div>
-            </div>
-            <p className='lien-about'>Vous souhaitez avoir mon CV au format PDF c'est par <strong><a href="#accueil">ici</a></strong></p>
+          <div></div>
+          <p className="lien-about">
+            Vous souhaitez avoir mon CV au format PDF c'est par{' '}
+            <a
+              href="https://cvdesignr.com/p/6373b11dbacf3"
+              className="cv"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ici
+            </a>
+          </p>
         </div>
-
       </article>
     </section>
   )

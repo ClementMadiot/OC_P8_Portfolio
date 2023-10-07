@@ -13,10 +13,10 @@ const Home = () => {
     <div>
       <NavBar />
       <Header />
-      <Service />
+      <AboutMe />
       <Portfolio />
       <Skills />
-      <AboutMe />
+      <Service />
       <Contact />
       <Footer />
     </div>
