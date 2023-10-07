@@ -7,11 +7,13 @@ import Portfolio from '../components/Portfolio'
 import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 import AboutMe from '../components/AboutMe'
+// import NavSideBar from '../components/NavSideBar'
 
 const Home = () => {
   return (
     <div>
       <NavBar />
+      {/* <NavSideBar/> */}
       <Header />
       <AboutMe />
       <Portfolio />
