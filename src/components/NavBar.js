@@ -1,9 +1,11 @@
 import React from 'react'
+import NavSideBar from './NavSideBar'
 
 const NavBar = () => {
   return (
     <nav id="navbar">
-      <ul>
+      <NavSideBar/>
+      <ul className='nav-desktop'>
         <li>
           <a href="#accueil">accueil</a>
         </li>
@@ -14,7 +16,7 @@ const NavBar = () => {
           <a href="#portfolio">portfolio</a>
         </li>
         <li>
-          <a href="#skills">skills</a>
+          <a href="#skills">compétences</a>
         </li>
         <li>
           <a href="#services">services</a>

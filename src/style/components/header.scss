@@ -3,6 +3,9 @@
   min-height: 400px;
   align-items: center;
   margin-top: 3.3rem;
+  @media screen and (max-width: 780px){
+    margin-top: 0;
+  }
   .headerSection {
     max-width: 1400px;
     margin: 0 auto;
