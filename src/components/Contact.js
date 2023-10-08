@@ -1,6 +1,6 @@
 import React from 'react'
-import Gmail from '../assets/images/icons8-gmail-96.png'
-import Whatsap from '../assets/images/icons8-whatsapp-96.png'
+import Gmail from '../assets/images/logo/icons8-gmail-96.png'
+import Whatsap from '../assets/images/logo/icons8-whatsapp-96.png'
 import ContactForm from './ContactForm'
 
 const Contact = () => {

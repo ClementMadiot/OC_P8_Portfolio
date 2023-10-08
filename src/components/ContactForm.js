@@ -28,7 +28,7 @@ const ContactForm = () => {
         result.innerHTML = ''
       }, 2000)
 
-      // form.current.reset()
+      form.current.reset()
     } else {
       result.innerHTML =
         "<p className='error'>Une erreur s'est produite, veuillez réessayer</p>"
@@ -38,7 +38,7 @@ const ContactForm = () => {
       setTimeout(() => {
         result.innerHTML = ''
       }, 2000)
-      // form.current.reset()
+      form.current.reset()
     }
     return false
   }

@@ -1,6 +1,6 @@
-import Sophie from '../assets/images/Sophie-v2.PNG'
-import Kasa from '../assets/images/Kasa-v2.PNG'
-import Grimoire from '../assets/images/Grimoire-v2.PNG'
+import Sophie from '../assets/images/portfolio/Sophie-v2.PNG'
+import Kasa from '../assets/images/portfolio/Kasa-v2.PNG'
+import Grimoire from '../assets/images/portfolio/Grimoire-v2.PNG'
 
 export const projet = [
   {

@@ -1,16 +1,16 @@
-import Html from "../assets/images/icons8-html-96.png";
-import Css from "../assets/images/icons8-css-96.png";
-import JavaScript from "../assets/images/icons8-javascript-96.png";
-import React from "../assets/images/icons8-react-native-96.png";
-import NodeJS from "../assets/images/icons8-node-js-96.png";
-import Sass from "../assets/images/icons8-sass-avatar-96.png";
-import MongoDB from "../assets/images/icons8-mongodb-96.png";
-import GraphQL from "../assets/images/icons8-graphql-96.png";
-import Swagger from "../assets/images/icons8-swagger-96.png";
-import Netfly from "../assets/images/icons8-netlify-96.png";
-import Filezilla from "../assets/images/icons8-filezilla-96.png";
-import Figma from "../assets/images/icons8-figma-96.png";
-import Github from "../assets/images/icons8-github-128.png";
+import Html from "../assets/images/logo/icons8-html-96.png";
+import Css from "../assets/images/logo/icons8-css-96.png";
+import JavaScript from "../assets/images/logo/icons8-javascript-96.png";
+import React from "../assets/images/logo/icons8-react-native-96.png";
+import NodeJS from "../assets/images/logo/icons8-node-js-96.png";
+import Sass from "../assets/images/logo/icons8-sass-avatar-96.png";
+import MongoDB from "../assets/images/logo/icons8-mongodb-96.png";
+import GraphQL from "../assets/images/logo/icons8-graphql-96.png";
+import Swagger from "../assets/images/logo/icons8-swagger-96.png";
+import Netfly from "../assets/images/logo/icons8-netlify-96.png";
+import Filezilla from "../assets/images/logo/icons8-filezilla-96.png";
+import Figma from "../assets/images/logo/icons8-figma-96.png";
+import Github from "../assets/images/logo/icons8-github-128.png";
 
 export const skillItem = [
   {

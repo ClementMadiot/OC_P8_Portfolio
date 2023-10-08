@@ -1,7 +1,5 @@
 import React from 'react'
 import Worker from '../assets/images/man-works.avif';
-import { NavLink } from 'react-router-dom';
-
 
 const Header = () => {
   return (
@@ -17,10 +15,6 @@ const Header = () => {
               <br />Je suis Clément Madiot
             </h1>
             <p>Développeur Web</p>
-            <NavLink to="/test" target="_blank"
-              rel="noreferrer">
-              ici
-            </NavLink>
           </div>
         </div>
       </div>

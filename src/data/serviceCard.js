@@ -1,7 +1,3 @@
-// import Frontend from '../assets/images/front-end.jpg'
-// import Backend from '../assets/images/back-end.jpg'
-// import Optimiser from '../assets/images/optimiser.jpg'
-
 export const serviceCard = [
   {
     id:'s2wnPfWn',
