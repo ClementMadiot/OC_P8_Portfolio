@@ -62,7 +62,11 @@ h2 {
     top: 170px;
   }
   @media screen and (max-width: 620px) {
-    top: 170px;
+    font-size: 2rem;
+    // margin-left: auto;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 1.7rem;
   }
 }
 
@@ -77,9 +81,7 @@ p {
   font-size: 1.25rem;
   color: $primary-color;
 }
-// .body{
-//   transition: 1s;
-// } 
+
 .back-span {
   font-family: 'Poppins';
   font-size: 140px;
@@ -103,8 +105,11 @@ p {
     letter-spacing: 2px;
     top: 50px;
   }
-  @media screen and (max-width: 620px) {
+  @media screen and (max-width: 720px) {
     font-size: 60px;
+  }
+  @media screen and (max-width: 620px) {
+    display: none;
   }
 }
 .title-span {

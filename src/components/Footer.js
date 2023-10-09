@@ -13,7 +13,7 @@ const Footer = () => {
             <i className="fa-brands fa-github"></i>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://api.whatsapp.com/send?phone=33648501383"
             target="_blank"
@@ -21,7 +21,7 @@ const Footer = () => {
           >
             <i className="fa-brands fa-whatsapp"></i>
           </a>
-        </li>
+        </li> */}
         <li>
           <a
             href="https://www.linkedin.com/feed/"

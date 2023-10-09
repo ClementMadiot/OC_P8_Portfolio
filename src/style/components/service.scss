@@ -41,6 +41,9 @@
     width: 290px;
     height: 280px;
   }
+  @media screen and (max-width: 780px){
+    margin: 2rem 0;
+  }
   .icon {
     font-size: 3em;
     color: $icon-services;

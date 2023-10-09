@@ -22,7 +22,7 @@ window.onload = function () {
 
   const untoggleMenu = (button) => {
     button.classList.remove('toggled')
-    button.style.backgroundColor = '#87bfd7da'
+    button.style.backgroundColor = 'rgba(255, 255, 255, 0.79)'
   }
 
   menu.addEventListener('click', (e) => {
@@ -31,7 +31,8 @@ window.onload = function () {
 
   const openMenu = () => {
     sidebar.classList.add('active')
-    sidebar.style.width = '250px'
+    sidebar.classList.remove('no-active')
+    // sidebar.style.width = '250px'
     toggleMenu(menu)
   }
 
@@ -40,7 +41,7 @@ window.onload = function () {
     untoggleMenu(menu)
 
     sidebar.classList.remove('active')
-    sidebar.style.width = '78px'
+    sidebar.classList.add('no-active')
   }
 }
 
@@ -57,10 +58,11 @@ const NavSideBar = () => {
         <li>
           <div className="menu-container">
             <button className="nav-icon" id="menu" onClick={toggleIsOpen}>
-            <i class="fa-solid fa-list"></i>
+              <i class="fa-solid fa-list"></i>
             </button>
           </div>
         </li>
+        <li><h3 className={`${isOpen ? 'visible' : 'no-visible'}`}>Menu</h3></li>
         <li>
           <a href="#accueil">
             <button
@@ -135,6 +137,52 @@ const NavSideBar = () => {
               <i class="fa-solid fa-envelope"></i>
               <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
                 Contact
+              </span>
+            </button>
+          </a>
+        </li>
+        <li><h3 className={`${isOpen ? 'visible' : 'no-visible'}`}>Lien</h3></li>
+        <li>
+          <a href="https://github.com/ClementMadiot" target="_blank"
+            rel="noreferrer">
+            <button
+              role="link"
+              className={`nav-icon ${isOpen ? 'open' : 'close'}`}
+            >
+              <i className="fa-brands fa-github"></i>
+              <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
+                Mon Github
+              </span>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:clementmadiot09@gmail.com" target="_blank"
+            rel="noreferrer">
+            <button
+              role="link"
+              className={`nav-icon ${isOpen ? 'open' : 'close'}`}
+            >
+              <i className="far fa-envelope"></i>
+              <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
+                Mon mail
+              </span>
+            </button>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://cvdesignr.com/p/6373b11dbacf3"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button
+              role="link"
+              className={`nav-icon ${isOpen ? 'open' : 'close'}`}
+            >
+              <i class="fa-solid fa-download"></i>
+              <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
+                Mon CV
               </span>
             </button>
           </a>

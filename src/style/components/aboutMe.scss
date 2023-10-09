@@ -1,6 +1,9 @@
 #about {
   position: relative;
-  .back-span{
+  @media screen and (max-width: 580px) {
+    margin-left: auto;
+  }
+  .back-span {
     top: 20px;
   }
   article {
@@ -8,7 +11,7 @@
     margin: 0 auto;
     padding: 2rem 0;
     span {
-      top:  -20px;
+      top: -20px;
       @media screen and (max-width: 820px) {
         top: -15px;
       }
@@ -30,12 +33,14 @@
   .description {
     margin: 5rem auto;
     width: 80%;
-
+    @media screen and (max-width: 520px) {
+      width: 65%;
+    }
   }
-  .cv{
+  .cv {
     margin-left: 1rem;
   }
-  .cv:hover{
+  .cv:hover {
     font-weight: 700;
     text-decoration: underline;
   }

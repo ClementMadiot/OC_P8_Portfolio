@@ -1,6 +1,6 @@
 import React from 'react'
 import Gmail from '../assets/images/logo/icons8-gmail-96.png'
-import Whatsap from '../assets/images/logo/icons8-whatsapp-96.png'
+// import Whatsap from '../assets/images/logo/icons8-whatsapp-96.png'
 import ContactForm from './ContactForm'
 
 const Contact = () => {
@@ -25,12 +25,12 @@ const Contact = () => {
               <p>clementmadiot09@gmail.com</p>
             </a>
           </div>
-          <div className="contact-phone">
+          {/* <div className="contact-phone">
             <a href="tel:+33648501383">
               <img src={Whatsap} alt="Whatsap" />
               <p className="phone-number">+33 648 501 383</p>
             </a>
-          </div>
+          </div> */}
         </article>
         <ContactForm /> 
       </section>

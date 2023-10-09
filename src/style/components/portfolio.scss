@@ -10,16 +10,20 @@
   margin: 0 auto;
   padding: 2rem 0;
 }
-.services-all::before{
+.services-all::before {
   content: '';
-    position: absolute;
-    width: 6%;
-    height: 1px;
-    background: black;
-    top: 195px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  width: 6%;
+  height: 1px;
+  background: black;
+  top: 195px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (max-width: 780px){
+
+  }
 }
+
 
 /* card  */
 .portfolio-block {
@@ -170,9 +174,8 @@
     padding: 3rem 0 0;
   }
   .portfolio-block {
-    width: 17rem;
-    height: 21rem;
-    margin: 1rem 0;
+    width: 14rem;
+    height: 18rem;
     h3 {
       font-size: 1.3rem;
       text-transform: capitalize;
@@ -187,6 +190,12 @@
       padding: 5px 15px;
       font-size: 0.8rem;
       text-transform: capitalize;
+    }
+  }
+  @media screen and (max-width: 380px) {
+    .portfolio-block {
+      width: 12rem;
+      height: 16rem;
     }
   }
   .portfolio-block:hover h3 {
