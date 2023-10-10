@@ -32,7 +32,6 @@ window.onload = function () {
   const openMenu = () => {
     sidebar.classList.add('active')
     sidebar.classList.remove('no-active')
-    // sidebar.style.width = '250px'
     toggleMenu(menu)
   }
 
@@ -58,7 +57,7 @@ const NavSideBar = () => {
         <li>
           <div className="menu-container">
             <button className="nav-icon" id="menu" onClick={toggleIsOpen}>
-              <i class="fa-solid fa-list"></i>
+              <i className="fa-solid fa-list"></i>
             </button>
           </div>
         </li>
@@ -69,7 +68,7 @@ const NavSideBar = () => {
               role="link"
               className={`nav-icon ${isOpen ? 'open' : 'close'}`}
             >
-              <i class="fa-solid fa-house"></i>
+              <i className="fa-solid fa-house"></i>
               <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
                 Accueil
               </span>
@@ -82,7 +81,7 @@ const NavSideBar = () => {
               role="link"
               className={`nav-icon ${isOpen ? 'open' : 'close'}`}
             >
-              <i class="fa-solid fa-user-tie"></i>
+              <i className="fa-solid fa-user-tie"></i>
               <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
                 Présentation
               </span>
@@ -95,7 +94,7 @@ const NavSideBar = () => {
               role="link"
               className={`nav-icon ${isOpen ? 'open' : 'close'}`}
             >
-              <i class="fa-solid fa-file-powerpoint"></i>
+              <i className="fa-solid fa-file-powerpoint"></i>
               <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
                 Portfolio
               </span>
@@ -108,7 +107,7 @@ const NavSideBar = () => {
               role="link"
               className={`nav-icon ${isOpen ? 'open' : 'close'}`}
             >
-              <i class="fa-solid fa-code"></i>
+              <i className="fa-solid fa-code"></i>
               <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
                 Compétences
               </span>
@@ -134,7 +133,7 @@ const NavSideBar = () => {
               role="link"
               className={`nav-icon ${isOpen ? 'open' : 'close'}`}
             >
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
               <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
                 Contact
               </span>
@@ -180,7 +179,7 @@ const NavSideBar = () => {
               role="link"
               className={`nav-icon ${isOpen ? 'open' : 'close'}`}
             >
-              <i class="fa-solid fa-download"></i>
+              <i className="fa-solid fa-download"></i>
               <span className={`${isOpen ? 'visible' : 'no-visible'}`}>
                 Mon CV
               </span>

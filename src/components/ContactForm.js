@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { init } from '@emailjs/browser'
+init(process.env.ID)
 
 const ContactForm = () => {
   const form = useRef()
@@ -17,7 +19,7 @@ const ContactForm = () => {
       'service_smreham',
       'template_ryw83wi',
       form.current,
-      "x0hL8Tjo3RgKYKPrH"
+      process.env.REACT_APP_ID
     )
     if (expressionReguliere.test(mail.value)) {
       result.innerHTML = '<p className="success">Message envoyé !</p>'
